@@ -1,0 +1,81 @@
+const ERROR_OBJECT = {
+    HTTP: {
+        BAD_REQUEST: 'http.bad.request',
+        INTERNAL_SERVER_ERROR: 'http.internal.server.error',
+        GATEWAY_TIMEOUT_ERROR: 'http.gateway.timeout',
+        BAD_GATEWAY: 'http.bad.gateway'
+    },
+    CONFIG: {
+        GET_CONFIG: {
+            NOT_FOUND: 'config.not.found'
+        }
+    },
+    MASTERS: {
+        COUNTRY: {
+            COUNTRY_NOT_SUPPORTED: 'masters.country.not.supported'
+        },
+        LANGUAGE: {
+            LANGUAGE_NOT_SUPPORTED: 'masters.language.not.supported'
+        }
+    },
+    AUTH: {
+        UNAUTHORIZED: 'auth.unauthorized',
+        OTP: {
+            INVALID_OTP: 'auth.otp.invalid',
+        },
+        PIN: {
+            INVALID_PIN: 'auth.pin.invalid',
+            FORGET_PIN_REFERENCE_ID: 'auth.forget.pin.reference.id.invalid',
+            INVALID_SECURITY_QUESTION_KEYS: 'auth.pin.question.keys.invalid',
+            INVALID_ANSWERS: 'auth.pin.answers.invalid',
+            RESET_PIN_SESSION_TIMEOUT: 'error.auth.pin.reset.session.timeout',
+            STEP_NOT_REQUIRED: 'auth.pin.step.not.required'
+        },
+        PROFILE: {
+            INVALID_USER_ID: 'auth.profile.user.id.invalid',
+            USER_NOT_FOUND: 'auth.profile.user.not.found',
+            NOT_VERIFIED: 'auth.profile.not.verified',
+            PIN_ALREADY_SET: 'auth.profile.pin.already.set',
+            USER_ALREADY_EXIST: 'auth.profile.user.already.exist',
+            PIN_NOT_SET: 'auth.profile.pin.not.set',
+            MOBILE_NOT_UPDATED: 'auth.profile.mobile.not.updated',
+        },
+        TOKEN: {
+            MISSING: 'error.auth.token.missing',
+            USER_NOT_FOUND: 'error.auth.user.not.found',
+            TOKEN_DECODE: 'error.auth.token.decode',
+            TOKEN_EXPIRED: 'error.auth.token.expired',
+            FORGET_PIN_TOKEN: 'error.auth.token.forget.pin.token.invalid',
+        },
+        SOCIAL: {
+            GOOGLE_CODE_INVALID: 'auth.social.google.code.invalid',
+            FACEBOOK_CODE_INVALID: 'auth.social.facebook.code.invalid',
+            AUTH_SOCIAL_USER_EXISTED: 'auth.social.user.existed',
+            AUTH_SOCIAL_EMAIL_NOT_FOUND: 'auth.social.email.notfound',
+            AUTH_SOCIAL_COUNTRY_CODE_INVALID: 'auth.social.country.code.invalid',
+        },
+        JWT: {
+            TOKEN: 'auth.jwt.token.generation',
+            DECODE_TOKEN: 'auth.jwt.token.decode',
+            RESET_PIN_TOKEN_INVALID: 'auth.jwt.reset.pin.invalid'
+        }
+    },
+    PAYMENTS: {
+        TRANSACTIONS: {
+            NO_TRANSACTIONS_FOUND: 'error.payments.transactions.not.found'
+        }
+    },
+    ORDER: {
+        PAYMENT: {
+            UTILITY_PAYMENT: 'order.payment.utility.payment',
+        },
+        FUND_TRANSFER: {
+            INVALID_INSTRUMENT_ID: 'order.fund.transfer.invalid.instrument.id',
+            INVALID_BENEFICIARY_CUSTOMER_ID: 'order.fund.transfer.invalid.beneficiary.customer.id',
+            INVALID_PAYER_INSTRUMENT_ID: 'order.fund.transfer.payer.invalid.instrument.id',
+            INVALID_BENEFICIARY_INSTRUMENT_ID: 'order.fund.transfer.beneficiary.invalid.instrument.id',
+            MISMATCH_BENEFICIARY_INSTRUMENT_ID_CONTACT_INFO: 'order.fund.transfer.beneficiary.mismatch.info',
+        }
+
+    }
+}
