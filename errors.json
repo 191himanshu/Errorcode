@@ -1,0 +1,11 @@
+{
+  
+    "errorCode": ["masters.country.not.supported","http.bad.request","http.internal.server.error","http.gateway.timeout","http.bad.gateway","config.not.found","masters.language.not.supported","auth.unauthorized","auth.otp.invalid","auth.pin.invalid",
+"auth.forget.pin.reference.id.invalid","auth.pin.question.keys.invalid","auth.pin.answers.invalid","error.auth.pin.reset.session.timeout","auth.pin.step.not.required","auth.profile.user.id.invalid",
+"auth.profile.user.not.found","auth.profile.not.verified","auth.profile.pin.already.set","auth.profile.user.already.exist","auth.profile.pin.not.set","auth.profile.mobile.not.updated",
+"error.auth.token.missing","error.auth.user.not.found","error.auth.token.decode","error.auth.token.expired","error.auth.token.forget.pin.token.invalid","auth.social.google.code.invalid",
+"auth.social.facebook.code.invalid","auth.social.user.existed","auth.social.email.notfound","auth.social.country.code.invalid","auth.jwt.token.generation","auth.jwt.token.decode",
+"auth.jwt.reset.pin.invalid","error.payments.transactions.not.found","order.payment.utility.payment","order.fund.transfer.invalid.instrument.id","order.fund.transfer.invalid.beneficiary.customer.id",
+"order.fund.transfer.payer.invalid.instrument.id","order.fund.transfer.beneficiary.invalid.instrument.id","order.fund.transfer.beneficiary.mismatch.info",""]
+
+}
